@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <h2 style="color: white;">Tugas Uas</h2>
+        <h3 style="color: white;">aplikasi pembaca konvsersi uang ke pecahan dan aplikasi menghitung berat badan ideal:</h3>
+        
+        <div class="tab">
+          <button style="color: white;" class="tablinks" onclick="openCity(event, 'uang')">aplikasi pembaca uang kelipatan Rp.25</button>
+          <button style="color: white;" class="tablinks" onclick="openCity(event, 'berat_badan')">aplikasi menghitung berat badan ideal</button>
+        </div>
+        
+        
+        <div id="uang" class="tabcontent">
+          <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+          <h3 style="color: white;">Konversi Uang ke Pecahan Mata Uang</h3>
+          
+
+          <table cellspacing = "10">
+            
+      <label for="jumlah_uang" style="color: white;">Masukkan jumlah uang : </label>
+      <input style="color: white;" type="number" id="jumlah_uang">
+    
+    <tr>
+        <td>
+      <button  id="konversiButton" style="color: white;">Konversi</button>
+      <button id="resetButton" style="color: white;">Reset</button>
+        </td>
+    </tr>
+
+      <div style="color: white;" id="hasilKonversi"></div>  
+            
+        </table>
+
+        </div>
+        
+        <div id="berat_badan" class="tabcontent">
+          <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+          <h3 style="color: white;">kalkulator Berat Badan Ideal</h3>
+
+          <table cellspacing = "10">
+            <tr>
+                <td  style="color: white;">Masukan Tinggi Anda </td>
+                <td style="color: white;">:</td>
+                <td><input  style="color: white;" id="tinggi" type="text" placeholder="input tinggi anda "></td>
+            </tr>
+        
+        
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button style="color: white;"  onclick="idealberatbadan()"> jumlakan </button>
+                    <button  style="color: white;" onclick="reset()"> reset </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><hr></td>
+            </tr>
+            <tr>
+                <td  style="color: white;"> Berat Badan Ideal </td>
+                <td style="color: white;">:</td>
+                <td align="center">
+                    <label style="color: white;" for="berat" id="berat">0</label>
+                </td>
+            </tr>
+        
+            
+            
+            
+        </table>
+
+        </div>
+        
+        <script src="js/hitungan.js"></script>
+</body>
+</html>
